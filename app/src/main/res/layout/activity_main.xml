@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- // TODO : Replace ConstraintLayout with LinearLayout(gravity = center, orientation = vertical, padding= 10dp, background = @background_color, padding="10dp") -->
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.khalidbaba.projet1.MainActivity">
+    tools:context="com.khalidbaba.projet1.MainActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/background_color">
 
     <!-- // TODO : Add EditText for user's name with (id="@+id/name", layout_marginBottom="10dp", background="@color/input_color", padding="10dp") -->
+    <EditText
+    android:id="@+id/name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/name" />
 
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password" />
 
     <!-- // TODO : Add EditText for user's email with (id="@+id/email", inputType="textEmailAddress", layout_marginBottom="10dp", background="@color/input_color", padding="10dp") -->
 
@@ -21,4 +41,4 @@
     <!-- // TODO : Add register Button with (id="@+id/btnRegister", layout_marginTop="20dip", background="@color/btn_color", text="@string/btn_register", textColor="@color/white") -->
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
