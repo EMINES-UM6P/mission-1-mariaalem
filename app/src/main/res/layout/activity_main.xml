@@ -8,37 +8,59 @@
     tools:context="com.khalidbaba.projet1.MainActivity"
     android:layout_gravity="center"
     android:orientation="vertical"
+    android:gravity="center_vertical"
     android:padding="10dp"
-    android:background="@color/background_color">
+    android:background="@color/background_color"
+   >
 
     <!-- // TODO : Add EditText for user's name with (id="@+id/name", layout_marginBottom="10dp", background="@color/input_color", padding="10dp") -->
     <EditText
-    android:id="@+id/name"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="@string/name" />
-
-    <EditText
-        android:id="@+id/email"
+        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/email" />
+        android:layout_marginBottom="10dp"
+        android:background="@color/input_color"
+        android:padding="10dp"
+        android:hint="@string/name" />
 
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/password" />
+
 
     <!-- // TODO : Add EditText for user's email with (id="@+id/email", inputType="textEmailAddress", layout_marginBottom="10dp", background="@color/input_color", padding="10dp") -->
-
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="10dp"
+        android:background="@color/input_color"
+        android:padding="10dp"
+        android:hint="@string/email" />
 
 
     <!-- // TODO : Add EditText for user's password with (id="@+id/password", inputType="textPassword", layout_marginBottom="10dp", background="@color/input_color", padding="10dp") -->
 
 
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:background="@color/input_color"
+        android:padding="10dp"
+        android:hint="@string/password" />
+
     <!-- // TODO : Add register Button with (id="@+id/btnRegister", layout_marginTop="20dip", background="@color/btn_color", text="@string/btn_register", textColor="@color/white") -->
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:layout_marginTop="20dip"
+        android:background="@color/btn_color"
+        android:text="@string/btn_register"
+        android:textColor="@color/white"
+        />
 
 </LinearLayout>
